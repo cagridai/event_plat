@@ -1,10 +1,8 @@
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
+  SheetClose,
 } from "@/components/ui/sheet";
 import { Separator } from "@/components/ui/separator";
 import NavItems from "@/components/shared/NavItems";
@@ -30,7 +28,8 @@ const MobileNav = () => {
             height={38}
           />
           <Separator className="border border-gray-50" />
-          <NavItems />
+
+          <NavItems withSheetClose />
         </SheetContent>
       </Sheet>
     </nav>
